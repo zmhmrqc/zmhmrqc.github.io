@@ -1,0 +1,21 @@
+/* 响应式背景图片 - 此样式将覆盖HTML内联样式中的 body 背景色 */
+body {
+    /* 移动端默认背景 (a.jpg) */
+    background-image: url('images/a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* 保留原有的字体和颜色样式，覆盖背景色 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1d1d1f;
+    line-height: 1.5;
+}
+
+/* 当屏幕宽度大于等于768像素时，应用电脑端背景 (pc.jpg) */
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/pc.jpg');
+    }
+}
